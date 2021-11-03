@@ -1,0 +1,2 @@
+Jira it's a software that assist with planning, tracking, reporting and releasing projects.
+Основана на тикетах, которые имеют разные состояния и могут менять их согласно тому, как настроено производство/бизнес процессы.
