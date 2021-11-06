@@ -1,7 +1,9 @@
 public class PlayGround {
 
   public static void main(String[] args) {
-    Integer integer = 15;
-    var something = 15;
+    System.out.println((Integer.toBinaryString((int) 'v')));
+    System.out.println((Integer.toBinaryString(15)));
+    System.out.println(0b110);
+    System.out.println(16>>>20);
   }
 }

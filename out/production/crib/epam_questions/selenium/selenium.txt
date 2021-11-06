@@ -1,0 +1,6 @@
+Selenium is a powerful framework for testing web applications. It provides best options to automate testing.
+
+Selenium grid provides a central hub that allows multiple selenium test to run concurrently on both local and remote servers.
+
+Selenium IDE - plugin, used to record each interaction of an application as test steps. After recording those are saved as scripts that could be run over and over again.
+The scripts are not maintained and extended easily over time.
