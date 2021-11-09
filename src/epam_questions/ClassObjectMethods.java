@@ -57,39 +57,39 @@ class Student {
       return false;
     }
     Student student = (Student) o;
-    if (id != student.id || phone != student.phone) {
-      return false;      //проверяем поля примит. типов
-    }
-    if (firstName != student.firstName) {
+    if (id != student.id || phone != student.phone) {        //проверяем поля примит. типов
       return false;
     }
-    return (firstName != null ? firstName.equals(student.firstName) : student.firstName == null) &&
-        (secondName != null ? secondName.equals(student.secondName)
-            : student.secondName == null); //таким образом  проверяем объектные поля.
+    return (firstName != null ? firstName.equals(student.firstName) : student.firstName == null) &&   //таким образом  проверяем объектные поля.
+        (secondName != null ? secondName.equals(student.secondName) : student.secondName == null);
 
-    /*return Objects.equals(firstName, student.firstName) &&                                        // второй способ
-        Objects.equals(secondName, student.secondName);*/
+//    return Objects.equals(firstName, student.firstName) &&                                        // второй способ
+//        Objects.equals(secondName, student.secondName);
 
-  }
-
-  @Override
-  public int hashCode() {
-    int result = id;
-    result = 31 * result + phone;
-    result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
-    result = 31 * result + (secondName != null ? secondName.hashCode() : 0);
-    return result;
   }
 
   /*@Override
   public int hashCode() {
-    int result = 1;
-    int prime = 31;
-    result = prime * result + id;
-    result = prime * result + phone;
-    return prime * result + Objects.hash(firstName, secondName);
+    int result = id;
+    result = 31 * result + phone;
+    result = 31 * result + (firstName != null ? firstName.hashCode() : 0);      //Don't forget to check for null!!!!!!!!!!!!
+    result = 31 * result + (secondName != null ? secondName.hashCode() : 0);
+    return result;
   }*/
 
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, phone, firstName, secondName);
+  }
+
+//  @Override
+//  public int hashCode() {
+//    int result = 1;
+//    int prime = 31;
+//    result = prime * result + id;
+//    result = prime * result + phone;
+//    return prime * result + Objects.hash(firstName, secondName);
+//  }
 
 }
 
