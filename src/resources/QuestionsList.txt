@@ -11,13 +11,16 @@ Java classes
 58. Внутренние классы
 89. STATIC в джава что означает
 30. Может быть private class?
-31. может быть final constructor?
+31. может быть final constructor? нет
 32. что такое effectivly final?
 33. static вложенный класс и обычный вложенный класс?как можно из другого класса к ним обратиться?
+          Outer.Inner inner = new Outer().new Inner(); Outer.InnerStatic innerStatic = new Outer.InnerStatic()
 34. что такое String pool? что будет елси создать String name = "Vasia"; name = name + "Petya"; что будет в StringPool?
+           Только Вася, т.к. попадают в пул литералов только таким образом и после метода intern();
 35. static методы в интерфейсе, могут быть? в чем их суть?
 36. Разница между interface и abstract class?
 38. что такое functional interface. Нужна или не нужна анатация?
+          не обязательно, но при наличии данной аннотации код не скомпилируется, если будет больше или меньше, чем 1 абстрактный метод. Рекомендуется добавлять @FunctionalInterface
 =======================================================================================================
 ООП
 
@@ -56,12 +59,12 @@ Java classes
 5. waiter’ы раскажите про них
 28. Imlicit and Explicit wait
 6.* find element/find elements в чем разница?
-12. Запуск тестов: Maven,TestNG
+12. Запуск тестов: Maven, TestNG
 62. Selenium 1 vs Selenium 2
 63. Локаторы(какие бывают)
 65. Assert и Verify
 82. Рассказать про аннтоации TestNG
-76.что такое Data provider
+76. что такое Data provider
 25. Тулы Selenium (IDE + grid)
 26. Интерфейсы Selenium
 27. Разница findElement, findElements()
@@ -72,7 +75,7 @@ Java classes
 80.Что такое BDD
 66. DDT и BDD
 85. Какие недостатки есть у BDD? (Behavior data drive)
-83.Что проверяется в API тестах?
+83. Что проверяется в API тестах?
 44. Selenium синхронизация тестов
 45. Локаторы
 69. Зачем нужны автотесты?
@@ -86,7 +89,8 @@ Java classes
 TOOLS
 77.Расскажи про Дженкинс
 56. Jenkins
-24. Git git amend Jenkins что за зверь
+24. Git git amend
+Jenkins что за зверь
 57. Git – subversion
 86. Жизненный цикл Мавен (какие есть команды)
 78.Что такое мавен?
@@ -125,3 +129,11 @@ Jira
 81.Что такое Cucumber и как запустить тесты?
 
 87. Как проводил код ревью (расказать про принципы KISS DRY SOLID)
+
+TopicJava. Fundamentals. Classes and Objects. Inheritance. Interfaces. Exceptions. Collections.
+TestNG/JUnit.Teamwork.
+VCS (SVN/GIT). CI. Jenkins.Selenium.
+WebDriver. Locators.
+BDD
+Scrum processTesting for atutomationAPI testing, web-services
+Mobile testing, AppiumTA Framework. Layers. Runner. Business Objects. Design Patterns.Practical task

@@ -21,11 +21,11 @@ public class CollectionsTest {
 
     //Sorting
     //First way
-    list.sort((el1, el2) -> el2.compareTo(el1));
+    list.sort((el1, el2) -> el1.compareTo(el2));
     System.out.println(DIVIDER + "\nSorting 1:\n" + DIVIDER);
     list.forEach(System.out::println);
     //Second way
-    Collections.sort(list);
+    Collections.sort(list, (str1, str2) -> str1.length() - str2.length());
     System.out.println(DIVIDER+ "\nSorting 2:\n" + DIVIDER);
     list.forEach(System.out::println);
     //Third way
